@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>input 태그</title>
+    <link rel="stylesheet" href="../css/input.css" />
+  </head>
+  <body>
+    <div class="input-container">
+      <h2>input 태그</h2>
+      <p>input type 별 구분하기!</p>
+      <br />
+
+      <div class="input-box">
+        <!-- 입력 폼 -->
+        <h3>입력 폼</h3>
+        <div class="input-list">
+          <div class="input-item">
+            <label class="label">
+              type="text"<br />
+              <span>:: 일반 텍스트 입력 폼 생성</span>
+            </label>
+            <input type="text" />
+          </div>
+          <hr />
+          <div class="input-item">
+            <label class="label">
+              type="number" <br />
+              <span>:: 숫자 입력 폼 생성</span>
+            </label>
+            <input type="number" />
+          </div>
+          <hr />
+          <div class="input-item">
+            <label class="label">
+              type="email"<br />
+              <span>
+                :: 이메일 입력 폼 생성<br />
+                :: submit 시 자동 검증 기능
+              </span>
+            </label>
+            <input type="email" />
+          </div>
+          <hr />
+          <div class="input-item">
+            <label class="label">
+              type="password"<br />
+              <span>
+                :: 비밀번호 입력 폼 생성<br />
+                :: *(별표) 형태로 노출
+              </span>
+            </label>
+            <input type="password" />
+          </div>
+          <hr />
+          <div class="input-item">
+            <label class="label">
+              type="tel"<br />
+              <span>:: 전화번호 입력 폼 생성</span>
+            </label>
+            <input type="tel" />
+          </div>
+          <hr />
+
+          <div class="input-item">
+            <label class="label">
+              type="url"<br />
+              <span>:: url 입력 폼 생성</span>
+            </label>
+            <input type="url" />
+          </div>
+          <hr />
+          <div class="input-item">
+            <label class="label">
+              type="search"<br />
+              <span>:: 검색어 입력 폼 생성</span>
+            </label>
+            <input type="search" />
+          </div>
+        </div>
+        <hr />
+        <hr />
+        <hr />
+        <hr />
+        <br />
+
+        <!-- 선택 폼 -->
+        <h3>선택 폼</h3>
+        <div class="input-list">
+          <div class="input-item">
+            <label class="label" for="checkbox">
+              type="checkbox" <br />
+              <span>:: 체크박스 생성</span>
+            </label>
+            <label for="checkbox1">
+              <input
+                type="checkbox"
+                name="checkbox"
+                id="checkbox1"
+                value="체크박스1"
+                checked
+              />
+              체크박스1
+            </label>
+            <br />
+            <label for="checkbox2">
+              <input
+                type="checkbox"
+                name="checkbox"
+                id="checkbox2"
+                value="체크박스2"
+              />
+              체크박스2
+            </label>
+            <br />
+            <label for="checkbox3">
+              <input
+                type="checkbox"
+                name="checkbox"
+                id="checkbox3"
+                value="체크박스3"
+              />
+              체크박스3
+            </label>
+            <br />
+          </div>
+          <hr />
+          <div class="input-item">
+            <label class="label" for="radio">
+              type="radio" <br />
+              <span>
+                :: 라디오 버튼 생성<br />
+                :: 여러 개 중 하나를 선택할 때 쓰이는 태그
+              </span>
+            </label>
+            <label for="radio1">
+              <input
+                type="radio"
+                name="radio"
+                id="radio1"
+                value="라디오1"
+                checked
+              />
+              라디오1
+            </label>
+            <br />
+            <label for="radio2">
+              <input type="radio" name="radio" id="radio2" value="라디오2" />
+              라디오2
+            </label>
+            <br />
+          </div>
+          <hr />
+          <div class="input-item">
+            <label class="label">
+              type="color" <br />
+              <span>:: 컬러 선택 생성</span>
+            </label>
+            <input type="color" />
+          </div>
+          <hr />
+          <div class="input-item">
+            <label class="label">
+              type="file" <br />
+              <span>:: 파일 선택 업로드 폼 생성</span>
+            </label>
+            <input type="file" />
+          </div>
+          <hr />
+          <div class="input-item">
+            <label class="label">
+              type="range"<br />
+              <span>:: 범위 선택 폼 생성</span>
+            </label>
+            <input type="range" />
+          </div>
+        </div>
+        <hr />
+        <hr />
+        <hr />
+        <hr />
+        <br />
+
+        <!-- 날짜 구분 -->
+        <h3>날짜</h3>
+        <div class="input-list">
+          <div class="input-item">
+            <label class="label">
+              type="datetime" <br />
+              <span
+                >:: 날짜와 시간 (년-월-일-시-분-초) 선택 생성
+                <br />
+                :: 시간대 정보 포함
+                <br />
+                :: HTML spec에서 drop
+              </span>
+            </label>
+            <input type="datetime" />
+          </div>
+          <hr />
+          <div class="input-item">
+            <label class="label">
+              type="datetime-local <br />
+              <span
+                >:: 날짜와 시간 (년-월-일-시-분-초) 선택 생성
+                <br />
+                :: 시간대 정보 미포함
+              </span>
+            </label>
+            <input type="datetime-local" />
+          </div>
+          <hr />
+          <div class="input-item">
+            <label class="label">
+              type="month"<br />
+              <span>:: 월 (년-월) 선택 폼 생성</span>
+            </label>
+            <input type="month" />
+          </div>
+          <hr />
+          <div class="input-item">
+            <label class="label">
+              type="date" <br />
+              <span>:: 날짜 (년-월-일) 선택 생성</span>
+            </label>
+            <input type="date" />
+          </div>
+          <hr />
+          <div class="input-item">
+            <label class="label">
+              type="time"<br />
+              <span>:: 시간 ((오전/오후)-시-분) 선택 폼 생성</span>
+            </label>
+            <input type="time" />
+          </div>
+          <hr />
+          <div class="input-item">
+            <label class="label">
+              type="week"<br />
+              <span>:: 주(년,-번째 주) 선택 폼 생성</span>
+            </label>
+            <input type="week" />
+          </div>
+        </div>
+        <hr />
+        <hr />
+        <hr />
+        <hr />
+        <br />
+
+        <!-- 버튼 생성 -->
+        <h3>버튼</h3>
+        <div class="input-list">
+          <div class="input-item">
+            <label class="label">
+              type="button" <br />
+              <span>:: 버튼 생성</span>
+            </label>
+            <input type="button" value="버튼" />
+          </div>
+          <hr />
+          <div class="input-item">
+            <label class="label">
+              type="submit" <br />
+              <span>
+                :: 제출 버튼 생성<br />
+                :: form 태그의 action값으로 전달
+              </span>
+            </label>
+            <input type="submit" />
+          </div>
+          <hr />
+          <div class="input-item">
+            <label class="label">
+              type="reset" <br />
+              <span>:: 초기화 버튼 생성</span>
+            </label>
+            <input type="reset" />
+          </div>
+          <hr />
+          <div class="input-item">
+            <label class="label">
+              type="image"<br />
+              <span>:: 이미지로 된 submit 버튼 생성</span>
+            </label>
+            <input
+              type="image"
+              src="../images/input-image.png"
+              alt="image"
+              width="40"
+              height="40"
+            />
+          </div>
+        </div>
+        <hr />
+        <hr />
+        <hr />
+        <hr />
+        <br />
+
+        <!-- 기타 -->
+        <h3>기타</h3>
+        <div class="input-list">
+          <div class="input-item">
+            <label class="label">
+              type="hidden"<br />
+              <span>
+                :: 감춰진 입력 폼 생성<br />
+                :: 사용자에게는 보이진 않지만 서버에 값을 전달하고 싶을 때
+                <br />
+                :: 표시되는 내용 없음
+              </span>
+            </label>
+            <input type="hidden" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
