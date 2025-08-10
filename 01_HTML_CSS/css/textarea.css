@@ -11,6 +11,17 @@ body {
 h2 {
   margin-bottom: 10px;
 }
+ul {
+  margin-bottom: 30px;
+}
+li {
+  list-style: none;
+  margin-bottom: 4px;
+  padding-left: 8px;
+}
+h4 {
+  margin-bottom: 4px;
+}
 .textarea-box {
   background-color: #fff;
   padding: 24px;

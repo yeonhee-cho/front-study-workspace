@@ -9,7 +9,19 @@
   <body>
     <div class="textarea-container">
       <h2>textarea 태그</h2>
-
+      <ul>
+        <h4>요소 설명</h4>
+        <li>name="요소 이름"</li>
+        <li>cols="너비 크기"</li>
+        <li>rows="영역의 라인 수"</li>
+        <li>maxlength="최대 문자 수"</li>
+        <li>placeholder="입력 값의 힌트"</li>
+        <li>readonly : 읽기 전용 / disabled : 클릭 불가, 복사 불가</li>
+        <li>autofocus : 페이지 로드 시 포커스가 textarea로 이동</li>
+        <li>
+          required : 폼 데이터가 서버로 제출되기 전에 반드시 채워져 있어야 함
+        </li>
+      </ul>
       <div class="textarea-box">
         <!-- 
             <textarea name="요소 이름" cols="너비 크기" rows="영역의 라인 수" readonly/disabled(하나만 사용)> 내용 </textarea> 
@@ -18,7 +30,7 @@
             maxlength : 최대 문자 수
             required : 폼 데이터가 서버로 제출되기 전에 반드시 채워져 있어야 함
             placeholder : 입력 값의 힌트
-          -->
+        -->
         <textarea name="textarea" cols="50" rows="10" readonly>내용</textarea>
       </div>
     </div>
