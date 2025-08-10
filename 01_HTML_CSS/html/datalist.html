@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>datalist</title>
+    <link rel="stylesheet" href="../css/datalist.css" />
+  </head>
+  <body>
+    <div class="datalist-container">
+      <h2>datalist 태그 형태</h2>
+      <ul>
+        <li>사용자가 값을 쉽게 입력 할 수 있도록 추천 목록을 제공</li>
+        <li>
+          사용자가 추천목록 안의 값을 타이핑 할 경우 자동완성 되는 기능을 제공
+        </li>
+      </ul>
+
+      <div class="datalist-box">
+        <label for="myBrowser">아래 목록에서 브라우저를 선택하세요:</label>
+        <br />
+        <input list="browsers" id="myBrowser" name="myBrowser" />
+        <datalist id="browsers">
+          <option value="Chrome" label="크롬"></option>
+          <option value="Firefox" label="파이어폭스"></option>
+          <option value="Internet Explorer" label="인터넷 익스플로러"></option>
+          <option value="Opera" label="오페라"></option>
+          <option value="Safari" label="사파리"></option>
+          <option value="Microsoft Edge" label="마이크로소프트 엣지"></option>
+        </datalist>
+      </div>
+    </div>
+  </body>
+</html>
