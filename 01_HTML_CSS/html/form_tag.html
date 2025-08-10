@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form 태그</title>
+    <link rel="stylesheet" href="../css/form.css" />
+  </head>
+  <body>
+    <div class="form-container">
+      <h2>form 태그 형태</h2>
+
+      <div class="form-box">
+        <pre>
+&lt;form name="폼 이름" 
+         action="데이터 전송 url" 
+         method="데이터 전송 방식(get/post)" 
+         target="데이터 제출 후 응답이 열릴 위치(_blank, _self, _parent, _top, 프레임 이름)" 
+         accept-charset="문자 인코딩 지정"&gt;
+    &lt;fieldset&gt;
+        &lt;legend&gt;그룹의 제목&lt;/legend&gt;
+        &lt;input type="text" value="데이터 전송 폼"&gt;
+    &lt;/fieldset&gt;
+&lt;/form&gt;
+        </pre>
+        <!-- <form action="데이터를 보낼 주소" method="데이터 전송 방식(get/post)"> -->
+        <form action="http://jsonplaceholder.typicode.com/users" method="get">
+          <!-- 관련 양식 그룹화 -->
+          <fieldset>
+            <!-- fieldset의 제목 -->
+            <legend>Login 1</legend>
+            <label> Username : <input type="text" name="username" /> </label>
+            <br />
+            <label>Password : <input type="password" name="password" /></label>
+          </fieldset>
+
+          <br />
+
+          <!-- 관련 양식 그룹화 -->
+          <fieldset>
+            <!-- fieldset의 제목 -->
+            <legend>Login 2</legend>
+            <label> E-mail : <input type="email" name="email" /></label> <br />
+            <label>password : <input type="password" name="password" /></label>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
