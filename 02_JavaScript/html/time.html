@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>시간 지연 함수</title>
+    <link rel="stylesheet" href="../css/javascript.css" />
+  </head>
+  <body>
+    <div class="body">
+      <h2>시간 지연 함수</h2>
+      <p class="txt">모두 비동기로 동작</p>
+      <div class="list">
+        <div class="item">
+          <h3>setTimeout</h3>
+          <p class="txt">지연 시간이 지난 후 1회만 수행</p>
+          <p class="txt">window. 는 생략 가능</p>
+          <div class="tag">
+            <p class="tag-txt">window.setTimeout(함수, 지연시간(ms));</p>
+          </div>
+          <p class="ex">setTimeout(() => { 여기에 내용 }, 지연시간(ms));</p>
+          <div class="ex-btn">
+            <button type="button" onclick="setTimeFn()">
+              setTimeout 2초 후 alert을 띄워 확인하기
+            </button>
+          </div>
+        </div>
+        <div class="item">
+          <h3>setInterval set</h3>
+          <p class="txt">지연 시간이 지날 때 마다 계속 수행</p>
+          <p class="txt">window. 는 생략 가능</p>
+          <div class="tag">
+            <p class="tag-txt">window.setInterval(함수, 지연시간(ms));</p>
+          </div>
+          <p class="ex">
+            const 변수명 = setInterval(() => { 여기에 내용 }, 지연시간(ms));
+          </p>
+          <div class="ex-btn">
+            <button type="button" onclick="intervalSetFn()">
+              setInterval 생성 1초 마다 log로 확인하기
+            </button>
+          </div>
+        </div>
+        <div class="item">
+          <h3>setInterval clear</h3>
+          <p class="txt">setInterval()로 인해 생성된 인터벌을 삭제하는 함수</p>
+          <p class="txt">window. 는 생략 가능</p>
+          <div class="tag">
+            <p class="tag-txt">window.clearInterval(생성된 인터벌);</p>
+          </div>
+          <p class="ex">setInterval(변수명);</p>
+          <div class="ex-btn">
+            <button type="button" onclick="intervalClearFn()">
+              setInterval 삭제 log로 확인하기
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../js/time.js"></script>
+  </body>
+</html>
