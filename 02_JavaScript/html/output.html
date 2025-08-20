@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>출력문(output)</title>
+    <link rel="stylesheet" href="../css/javascript.css" />
+  </head>
+  <body>
+    <div class="body">
+      <h2>출력문(output)</h2>
+      <div class="list">
+        <div class="item">
+          <h3>alert</h3>
+          <p class="txt">별도의 대화 상자</p>
+          <p class="txt">확인 버튼만 존재</p>
+          <p class="txt">window. 는 생략 가능</p>
+          <div class="tag">
+            <p class="tag-txt">window.alert(내용(문자열/변수명/숫자형 등));</p>
+          </div>
+          <p class="ex">alert("이것은 alert 1번 내용입니다.");</p>
+          <p class="ex">alert(`${변수명} 입니다.`);</p>
+          <div class="ex-btn">
+            <button type="button" onclick="alertFn()">alert 확인하기</button>
+          </div>
+        </div>
+        <div class="item">
+          <h3>prompt</h3>
+          <p class="txt">별도의 대화 상자</p>
+          <p class="txt">alert창에서 텍스트를 입력할 수 있는 인풋 존재</p>
+          <p class="txt">window. 는 생략 가능</p>
+          <div class="tag">
+            <p class="tag-txt">window.prompt(내용(문자열/변수명/숫자형 등));</p>
+          </div>
+          <p class="ex">prompt("이것은 prompt 1번 내용입니다.");</p>
+          <p class="ex">prompt(`${변수명} 입니다.`);</p>
+          <div class="ex-btn">
+            <button type="button" onclick="promptFn()">prompt 확인하기</button>
+          </div>
+        </div>
+        <div class="item">
+          <h3>confirm</h3>
+          <p class="txt">별도의 대화 상자</p>
+          <p class="txt">확인, 취소 버튼이 존재</p>
+          <p class="txt">window. 는 생략 가능</p>
+          <div class="tag">
+            <p class="tag-txt">
+              window.confirm(내용(문자열/변수명/숫자형 등));
+            </p>
+          </div>
+          <p class="ex">confirm("이것은 confirm 1번 내용입니다.");</p>
+          <p class="ex">confirm(`${변수명} 입니다.`);</p>
+          <div class="ex-btn">
+            <button type="button" onclick="confirmFn()">
+              confirm 확인하기
+            </button>
+          </div>
+        </div>
+        <div class="item">
+          <h3>log</h3>
+          <p class="txt">F12 (개발자 도구) 콘솔을 통해 데이터를 출력</p>
+          <div class="tag">
+            <p class="tag-txt">console.log();</p>
+          </div>
+          <p class="ex">console.log("이것은 console log 1번 내용입니다.");</p>
+          <div class="ex-btn">
+            <button type="button" onclick="consoleFn()">
+              console.log 확인하기
+            </button>
+            <p class="txt">
+              위 버튼을 누르면 F12 (개발자 도구) 콘솔에서 내용을 확인하실 수
+              있습니다.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <h3>추가 내용</h3>
+        <p class="txt">작은 따옴표('')</p>
+        <p class="txt">큰 따옴표("")</p>
+        <p class="txt">백틱(``)</p>
+      </div>
+    </div>
+    <script src="../js/output.js"></script>
+  </body>
+</html>
