@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript에서 선택자</title>
+    <link rel="stylesheet" href="../css/javascript.css" />
+  </head>
+  <body>
+    <div class="body">
+      <h2>JavaScript에서 선택자</h2>
+      <div class="list">
+        <div class="item">
+          <h3>태그 선택자</h3>
+          <p class="txt">Elements, Tag</p>
+          <div class="tag">
+            <p class="tag-txt">document.getElementsByTagName(태그명)[순서];</p>
+          </div>
+          <p class="ex">document.getElementsByTagName('div')[0];</p>
+        </div>
+        <div class="item">
+          <h3>클래스 선택자</h3>
+          <p class="txt">Elements, Class</p>
+          <div class="tag">
+            <p class="tag-txt">
+              document.getElementsByClassName(클래스명)[순서];
+            </p>
+          </div>
+          <p class="ex">document.getElementsByClassName("class-name")[0];</p>
+        </div>
+        <div class="item">
+          <h3>아이디 선택자</h3>
+          <p class="txt">Element, Id</p>
+          <div class="tag">
+            <p class="tag-txt">document.getElementById(아이디명);</p>
+          </div>
+          <p class="ex">document.getElementById("idName");</p>
+        </div>
+        <div class="item">
+          <h3>간단한 선택자</h3>
+          <p class="txt">querySelector, (Tag, Class, Id)</p>
+          <p class="txt">순서 지정 불가</p>
+          <div class="tag">
+            <p class="tag-txt">
+              document.querySelector(태그명, 클래스명, 아이디명 다 가능);
+            </p>
+          </div>
+          <p class="ex">document.querySelector("div");</p>
+          <p class="ex">document.querySelector(".class-name");</p>
+          <p class="ex">document.querySelector("#idName");</p>
+        </div>
+        <div class="item">
+          <h3>간단한 전체 선택자</h3>
+          <p class="txt">querySelectorAll, (Tag, Class, Id)</p>
+          <p class="txt">순서를 지정해주지 않을 경우 전체 선택</p>
+          <div class="tag">
+            <p class="tag-txt">
+              document.querySelectorAll(태그명, 클래스명, 아이디명 다
+              가능)[순서];
+            </p>
+          </div>
+          <p class="ex">document.querySelectorAll("div")[0];</p>
+          <p class="ex">document.querySelectorAll(".class-name")[0];</p>
+          <p class="ex">document.querySelectorAll("#idName");</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
